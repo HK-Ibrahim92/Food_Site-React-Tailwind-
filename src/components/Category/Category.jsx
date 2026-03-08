@@ -1,0 +1,41 @@
+import React from 'react'
+import Heading from '../Heading/Heading'
+import categories from './category'
+import Button from '../Button/Button'
+
+const Category = () => {
+    console.log('categories', categories)
+
+    const renderCard = categories.map((card) => {
+        return (
+            // card
+            <div className=' flex-1 basis-[300px] '>
+                {/* card Image */}
+                <div  className='flex justify-center w-full min-h-[20vh] relative' ><img className= 'h:35 md:h-45 absolute -bottom-10 ' src={card.img} alt="" /></div>
+
+                {/* card Content  */}
+                <div className='bg-zinc-200 pt-20 pb-5 px-5 rounded-2xl'>
+                    <h3 className=' text-3xl font-bold  text-zinc-800'>{card.title}</h3>
+                    <p className=' text-zinc-700 mt-5 mb-10'>{card.description}</p>
+                    <Button value={"See All"} />
+                </div>
+            </div>
+
+        )
+    })
+
+    return (
+        <section className='max-w-350 m-auto px-10 mt-16'>
+            <Heading highlight={"Shop"} text={"by Category"} />
+
+            <div className='flex flex-wrap justify-center gap-2 md:gap-5 '>
+                {renderCard}
+            </div>
+            {/* category card   */}
+
+
+        </section>
+    )
+}
+
+export default Category
