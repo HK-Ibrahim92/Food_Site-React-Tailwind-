@@ -7,7 +7,7 @@ const Process = () => {
     const NumberIcon = steps?.number;
     const Icon = steps?.icon;
     return (
-      <div className={`flex-1 px-5 ${steps.id % 2===0 ? "-mt-40": ""}`}>
+      <div key={steps.id} className={`flex-1 px-5 ${steps.id % 2===0 ? "-mt-40": ""}`}>
         <span className=" flex justify-center items-center h-16 w-16 rounded-full bg-zinc-800 text-white outline-[3px] outline-offset-[6px] outline-zinc-800 outline-dashed">
           <NumberIcon className="text-5xl " />
         </span>
