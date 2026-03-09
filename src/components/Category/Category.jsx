@@ -1,15 +1,14 @@
 import React from 'react'
 import Heading from '../Heading/Heading'
-import categories from './category'
+import categories from './categoryList'
 import Button from '../Button/Button'
 
 const Category = () => {
-    console.log('categories', categories)
 
     const renderCard = categories.map((card) => {
         return (
             // card
-            <div className=' flex-1 basis-[300px] '>
+            <div key={card.id} className=' flex-1 basis-[300px] '>
                 {/* card Image */}
                 <div  className='flex justify-center w-full min-h-[20vh] relative' ><img className= 'h:35 md:h-45 absolute -bottom-10 ' src={card.img} alt="" /></div>
 

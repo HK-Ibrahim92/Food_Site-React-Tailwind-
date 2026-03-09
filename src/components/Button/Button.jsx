@@ -1,10 +1,9 @@
 import React from 'react'
 
 const Button = (props) => {
-    console.log("props",props)
   return (
    <>
-        <button className='bg-amber-500 text-white py-2 px-5 rounded-xl' >{props.value}</button>
+        <button className='bg-amber-500 text-white py-1 px-3 md:py-2 md:px-5 rounded-xl text-sm md:text-lg' >{props.value}</button>
    </>
    
   )
