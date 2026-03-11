@@ -21,7 +21,7 @@ const CategoryPage = ({ type,title ,bgImage}) => {
     <div>
         <Banner value={title} img={bgImage}/>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-10 justify-items-center">
+        <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-3 md:mt-10 justify-items-center p-4">
         {renderProduct}
         </div>
     </div>

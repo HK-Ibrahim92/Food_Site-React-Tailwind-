@@ -5,7 +5,7 @@ import Button from "../Button/Button";
 const Card = (props) => {
   const { title, img, price } = props?.value || {};
   return (
-    <div className="relative w-40 md:w-65 bg-zinc-200 rounded-xl shadow-md hover:shadow-xl hover:cursor-pointer transition-all duration-300 p-4">
+    <div className="relative w-30 md:w-65 bg-zinc-200 rounded-xl shadow-md hover:shadow-xl hover:cursor-pointer transition-all duration-300 p-2 md:p-4">
 
     {/* Wishlist Icon */}
     <span className="absolute top-3 right-3 text-gray-400 hover:text-red-500 cursor-pointer">
@@ -18,9 +18,9 @@ const Card = (props) => {
     </button>
 
     {/* Image */}
-    <div className="flex justify-center mb-3">
+    <div className="flex justify-center mb-0 md:mb-3">
       <img
-        className="h-22 md:h-32 object-contain"
+        className="h-18 md:h-32 object-contain"
         src={img}
         alt={title}
       />

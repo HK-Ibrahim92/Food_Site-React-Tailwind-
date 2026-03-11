@@ -14,7 +14,7 @@ const Hero = () => {
             </div>  
             {/* Hero Image */}
             <div className='flex-1'>
-                <img src={Grocery} alt="" className='h:[20vh] md:h-[75vh]' />
+                <img src={Grocery} alt="" className='h-[30vh] md:h-[75vh]' />
             </div>
         </section>
     )

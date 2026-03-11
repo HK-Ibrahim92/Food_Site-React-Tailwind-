@@ -47,7 +47,7 @@ const Navbar = () => {
                     </div>
                     <FaHeart className='text-xl' />
                     <FaShoppingCart className='text-xl' />
-                    <button className='flex md:hidden ml-5 text-2xl' onClick={onToggle} >{MobileMenu ? <GiHamburgerMenu /> : <TbMenu3 />} </button>
+                    <button className='flex  md:hidden ml-5 text-2xl' onClick={onToggle} >{MobileMenu ? <GiHamburgerMenu /> : <TbMenu3 />} </button>
 
                 </div>
                 {/* Mobile Menu */}

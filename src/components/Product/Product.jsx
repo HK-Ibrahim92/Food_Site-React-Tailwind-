@@ -18,7 +18,7 @@ const Product = () => {
 
       {/* Tabs */}
 
-      <div className=" flex gap-3 justify-center">
+      <div className=" flex flex-wrap gap-3 justify-center">
         {categories.map((category) => {
           console.log(category == activeTab);
           return (
@@ -37,7 +37,7 @@ const Product = () => {
       </div>
 
       {/* Card */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10 justify-items-center">
+      <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-10 mt-10 justify-items-center">
         {filteredItem &&
           filteredItem.slice(0, 8).map((item) => {
             return <Card key={item.id} value={item} />;
