@@ -2,6 +2,7 @@ import React from 'react'
 import Heading from '../Heading/Heading'
 import categories from './categoryList'
 import Button from '../Button/Button'
+import { Link } from 'react-router-dom'
 
 const Category = () => {
 
@@ -14,9 +15,12 @@ const Category = () => {
 
                 {/* card Content  */}
                 <div className='bg-zinc-200 pt-20 pb-5 px-5 rounded-2xl'>
-                    <h3 className=' text-3xl font-bold  text-zinc-800'>{card.title}</h3>
+                    <h3 className=' text-3xl font-bold  text-zinc-800'>{card.title}</h3> 
                     <p className=' text-zinc-700 mt-5 mb-10'>{card.description}</p>
-                    <Button value={"See All"} />
+                    <Link to={card.path}
+                    className='bg-amber-500 text-white py-1 px-3 md:py-2 md:px-5 rounded-xl text-sm md:text-lg'
+                    >
+                        See All</Link>
                 </div>
             </div>
 

@@ -2,7 +2,7 @@ import React from "react";
 import Heading from "../Heading/Heading";
 import stepsList from "./ProcessList";
 const Process = () => {
-  console.log(stepsList);
+  
   const stepRender = stepsList.map((steps) => {
     const NumberIcon = steps?.number;
     const Icon = steps?.icon;

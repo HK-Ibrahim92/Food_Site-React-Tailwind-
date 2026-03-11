@@ -3,7 +3,7 @@ import { FaHeart, FaPlus } from "react-icons/fa";
 import Button from "../Button/Button";
 
 const Card = (props) => {
-  const {  title, img, price } = props.value;
+  const { title, img, price } = props?.value || {};
   return (
     <div className="relative w-40 md:w-65 bg-zinc-200 rounded-xl shadow-md hover:shadow-xl hover:cursor-pointer transition-all duration-300 p-4">
 

@@ -6,19 +6,22 @@ const categories = [
     id: 1,
     title: "Fruits & Veggies",
     description: "Fresh seasonal fruits and green vegetables sourced from local farms.Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore animi consequuntur voluptatum quae commodi, suscipit ad,",
-    img: fruitImage
+    img: fruitImage,
+    path:"/fruits"
   },
   {
     id: 2,
     title: "Meat & Seafood",
     description: "Premium quality chicken, beef, mutton and fresh seafood items.Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore animi consequuntur voluptatum quae commodi, suscipit ad,",
-    img: MeatImage
+    img: MeatImage,
+    path:"/seafoods"
   },
   {
     id: 3,
     title: "Dairy & Eggs",
     description: "Organic milk, butter, cheese, yogurt and farm fresh eggs.Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore animi consequuntur voluptatum quae commodi, suscipit ad,",
-    img: DairyImage
+    img: DairyImage,
+    path:"/dairy"
   }
 ];
 

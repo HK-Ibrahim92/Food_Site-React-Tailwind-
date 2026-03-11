@@ -5,6 +5,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { TbMenu3 } from "react-icons/tb";
 import Button from '../Button/Button';
+import { Link } from 'react-router-dom';
 const Navbar = () => {
     const [MobileMenu, setmobileMenu] = useState(false)
     const [IsScroll, setisScroll] = useState(false)
@@ -25,7 +26,8 @@ const Navbar = () => {
         <header  >
             <nav className={`md:h-20 h-16 flex justify-between px-2 md:px-2 rounded-md  items-center  max-w-350 m-auto fixed top-0 left-0 right-0 bg-white z-30
                 ${IsScroll ? 'shadow-md' : ""}`}>
-                <h1 className='text-3xl font-bold'>Gr<span className='text-5xl font-bolder text-amber-500'>o</span>cify</h1>
+               <Link to={'/'}> <h1 className='text-3xl font-bold'>Gr<span className='text-5xl font-bolder text-amber-500'>o</span>cify</h1></Link>
+                
 
                 <ul className='  gap-15 md:flex hidden'>
                     <li><a className='hover:text-amber-500 cursor-pointer' href="Home">Home</a></li>
